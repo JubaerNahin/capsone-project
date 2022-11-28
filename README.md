@@ -1,1 +1,1 @@
-# capsone-project
+# capstone-project
