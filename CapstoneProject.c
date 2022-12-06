@@ -13,7 +13,7 @@ void delete();
     int id;
     float cgpa;
 };
-
+struct student data;
 void main()
 {
 
@@ -79,7 +79,7 @@ void addstudent(){
 
   char next;
   FILE *fp;
-  struct student data;
+  
 do{
   system("cls");
   printf("\t\t\t\t=======Add Student Data=======\n\n\n");
@@ -114,7 +114,7 @@ void studentrecord(){
 
   FILE *fp;
 
-  struct student data;
+  
   fp=fopen("Data.txt","r");
 
    printf("\t\t\t\t=======Students Record=======\n\n\n");
@@ -140,7 +140,7 @@ void studentrecord(){
 }
 
 void searchstudent(){
-  struct student data;
+  
   FILE *fp;
   int id,found=0;
 
@@ -169,7 +169,7 @@ void searchstudent(){
 }
 
 void delete(){
-  struct student data;
+  
   FILE *fp, *fp1;
 
   int id,found=0;
