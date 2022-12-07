@@ -85,7 +85,7 @@ do{
     printf("\n\t\t\t------------------------------\n");
 
     if(fp==NULL){
-      printf("can't open file\n");
+      printf("\t\t\t\tcan't open file\n");
     }
     else{
       printf("\t\t\tRecord stored successfully\n");
@@ -110,7 +110,7 @@ void studentrecord(){
 
   if(fp==NULL){
 
-    printf("can't open file\n");
+    printf("\t\t\t\tcan't open file\n");
     return;
   }
   else{
@@ -143,7 +143,7 @@ void searchstudent(){
   printf("\t\t\t\t=======Search Record of a Student=======\n\n\n");
    if(fp==NULL){
 
-    printf("can't open file\n");
+    printf("\t\t\t\tcan't open file\n");
     return;
   }
   else{
@@ -181,8 +181,8 @@ void delete(){
   fp1=fopen("temp.txt","w");
 
   if(fp==NULL){
-    printf("can't open file");
-    exit(0);
+    printf("\t\t\t\tcan't open file");
+    return;
   }
    printf("\t\t\t\tEnter the id : ");
    scanf("%d",&id);
@@ -207,5 +207,4 @@ void delete(){
   }
     remove("Data.txt");
     rename("temp.txt","Data.txt");
-
 }
